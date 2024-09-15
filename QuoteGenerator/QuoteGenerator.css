@@ -1,0 +1,40 @@
+#quote-box {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+#text {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#author {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+#new-quote {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#tweet-quote {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #1da1f2;
+    text-decoration: none;
+    border-radius: 5px;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <h1 id="title">Domestic cats</h1>
+    <p id="description">Do you have a cat? Help us colect information about our neighborhood's pets!</p>
+    <form id="survey-form">
+        <fieldset>
+            <legend id="legenda">Personal Information. Tell us more about you!</legend>
+            <label id="name-label">Enter your name:<input placeholder="Ex: Joaquim Santos" id="name" type="text"
+                    required /> </label>
+
+            <label id="number-label">Enter your age:<input placeholder="Ex: 21" id="number" min="17" max="37"
+                    type="number" required /> </label>
+
+            <label id="email-label">Enter your email:<input id="email" placeholder="Ex: exemplo@exemplo.com"
+                    type="email" required /> </label>
+
+            <p id="question1">Do you own a cat?</p>
+
+            <label for="owns"><input id="owns-cat" type="radio" name="does it own cats" class="inline" value="yes"
+                    checked /> Indoors!</label>
+            <label for="doesnt"><input id="not-owns-cat" type="radio" name="does it own cats" value="no"
+                    class="inline" /> Outdoors!</label>
+        </fieldset>
+        <fieldset>
+            <legend id="legenda2">If you own a cat, tell us more about your furry friend!</legend>
+            <p id="question2">What is your cat's breed?</p>
+            <select id="dropdown" name="referrer">
+                <option value="">(select one)</option>
+                <option value="1">Persian</option>
+                <option value="2">Siamese</option>
+                <option value="3">Bengal</option>
+                <option value="4">Sphynx</option>
+                <option value="5">Maine Coon</option>
+                <option value="6">British Shorthair</option>
+                <option value="7">Ragdoll</option>
+                <option value="8">I don't know</option>
+            </select>
+            <p id="question3">How would you describe your cat?</p>
+            <label>
+                <input class="inline" value="0" type="checkbox" name="Lazy" />Lazy
+            </label>
+            <label>
+                <input class="inline" value="2" type="checkbox" name="Funny" />Funny
+            </label>
+            <label>
+                <input class="inline" value="3" type="checkbox" name="Lazy" />Energetic
+            </label>
+            <label>
+                <input class="inline" value="1" type="checkbox" name="Lazy" />Stupid
+            </label>
+            <label id="special">Something about your cat you think we should know:
+                <textarea value="text" name="bio" rows="4" cols="40"
+                    placeholder="My cat has special disabilities such as..."></textarea>
+            </label>
+        </fieldset>
+        <label>
+            <input id="submit" type="submit" />
+        </label>
+    </form>
+</body>
+
+</html>
